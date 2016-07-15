@@ -1,0 +1,13 @@
+@import "home-base/base";
+
+body {
+  background-color: grey;
+  padding: 15px;
+}
+
+#wrapper {
+  @include outer-container();
+  background: #B2E6C9;
+  height: 100vh;
+  max-width: 100%;
+}

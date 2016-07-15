@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.navbar {
+  background: #357266; }
+
+#blog-title {
+  background: #C8D96F; }
+
+a {
+  text-decoration: none; }
+
+li {
+  display: inline; }
+
+.top-row, .second-row, .third-row, .fourth-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .top-row:last-child, .second-row:last-child, .third-row:last-child, .fourth-row:last-child {
+    margin-right: 0; }
+
+.navbar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 6vh; }
+  .navbar:last-child {
+    margin-right: 0; }
+
+#blog-title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: 6vh; }
+  #blog-title:last-child {
+    margin-right: 0; }
+
+li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  li:last-child {
+    margin-right: 0; }
+
+.post {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  height: 30vh;
+  position: relative; }
+  .post:last-child {
+    margin-right: 0; }
+
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: auto;
+  top: 0;
+  right: 0;
+  position: absolute; }
+  .sidebar:last-child {
+    margin-right: 0; }
+
+.comment {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  height: 17vh;
+  position: relative; }
+  .comment:last-child {
+    margin-right: 0; }
+
+#blog-title {
+  height: 6vh;
+  position: relative; }
+  #blog-title h2 {
+    font-family: Bad Script;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 10px; }
+
+ul {
+  padding: 0 5px 0; }
+
+li {
+  margin-top: 25px; }
+
+.top-row {
+  position: relative; }
+
+.post {
+  background: #65532F; }
+
+.sidebar {
+  background: #0E3B43; }
+
+.comment {
+  background: #312509; }
+
+body {
+  background-color: grey;
+  padding: 15px; }
+
+#wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #B2E6C9;
+  height: 100vh;
+  max-width: 100%; }
+  #wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+/*# sourceMappingURL=main.css.map */

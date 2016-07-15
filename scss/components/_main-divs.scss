@@ -1,0 +1,38 @@
+@import "helpers/mixins";
+
+#blog-title {
+  height: 6vh;
+  position: relative;
+  h2 {
+    @include text(Bad Script, 20px, bold, white);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 10px;
+  }
+}
+
+ul {
+  padding: 0 5px 0;
+}
+
+li {
+  margin-top: 25px;
+}
+
+.top-row {
+  position: relative;
+}
+
+.post {
+  background: #65532F;
+}
+
+.sidebar {
+  background: #0E3B43
+}
+
+.comment {
+  background: #312509;
+}
