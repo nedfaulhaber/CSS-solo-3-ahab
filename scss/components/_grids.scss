@@ -19,6 +19,7 @@ li {
   @include span-columns(8);
   height: 30vh;
   position: relative;
+
 }
 
 .sidebar {
@@ -29,8 +30,12 @@ li {
   position: absolute;
 }
 
+.harpoon {
+  @include span-columns(2);
+  height: auto;
+}
 .comment {
-  @include span-columns(6);
+  @include span-columns(4);
   height: 17vh;
   position: relative;
 

@@ -1,17 +1,5 @@
 @import "helpers/mixins";
-
-#blog-title {
-  height: 6vh;
-  position: relative;
-  h2 {
-    @include text(Bad Script, 20px, bold, white);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    padding-left: 10px;
-  }
-}
+@import "helpers/variables";
 
 ul {
   padding: 0 5px 0;
@@ -23,16 +11,21 @@ li {
 
 .top-row {
   position: relative;
+
 }
 
 .post {
-  background: #65532F;
+  position: relative;
+  background-image: url("../img/burntpaper.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 
 .sidebar {
-  background: #0E3B43
+  border: 2px solid black;
 }
 
-.comment {
-  background: #312509;
-}
+em {
+    font-style: italic;
+  }

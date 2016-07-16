@@ -1,15 +1,45 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+
+#blog-title {
+  height: 6vh;
+  position: relative;
+  h2 {
+    @include text(Bad Script, 35px, bold, white);
+    margin-top: 1%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 865px) {
+      font-size: 30px;
+    }
+    @media only screen and (min-width: 1200px) {
+      font-size: 41px;
+      margin-top: 1.5%;
+    }
+  }
+}
+
 .navbar {
-  background: #357266;
+  background: $nav-blue;
 }
 
 #blog-title {
-  background: #C8D96F;
+  background: $title-blue;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 li {
   display: inline;
+  text-align: center;
+  @include text(Playfair Display, 16px, normal, white);
+  @media only screen and (min-width: 1200px) {
+    font-size: 19px;
+  }
 }
