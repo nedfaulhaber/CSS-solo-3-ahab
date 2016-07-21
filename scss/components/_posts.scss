@@ -1,0 +1,65 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+
+
+.post {
+  position: relative;
+  background-image: url("../img/burntpaper.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  h4 {
+    @include text(Bad Script, 20px, bold, black);
+    position: absolute;
+    top: 80px;
+    left: 110px;
+  }
+
+  .animated-text {
+    @include text(Bad Script, 30px, bold, black);
+    // opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    height: 230px;
+    padding-bottom: 20px;
+
+    @media only screen and (min-width: 790px) {
+      left: 120px;
+    }
+
+    @media only screen and (min-width: 865px) {
+      font-size: 35px;
+      top: 55px;
+    }
+
+    @media only screen and (min-width: 965px) {
+
+      left: 130px;
+      top: 60px;
+    }
+
+    @keyframes type-1 {
+      from {width: 0;}
+    }
+
+    @keyframes blink {
+      to{opacity: .0;}
+    }
+
+    p {
+      white-space: nowrap;
+      width: 400px;
+      overflow: hidden;
+      padding: 10px 0 10px;
+    }
+    .text {
+      animation: type-1 4s steps(60, end);
+    }
+  }
+  @media only screen and (max-width: 875px) {
+    margin-bottom: -60px;
+  }
+}

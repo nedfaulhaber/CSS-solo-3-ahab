@@ -83,9 +83,13 @@ a {
   text-decoration: none;
   color: white; }
 
+ul {
+  padding: 0 5px 0; }
+
 li {
   display: inline;
   text-align: center;
+  margin-top: 25px;
   font-family: Playfair Display;
   font-size: 16px;
   font-weight: normal;
@@ -101,6 +105,9 @@ li {
   width: 100%; }
   .top-row:last-child, .second-row:last-child, .third-row:last-child, .fourth-row:last-child {
     margin-right: 0; }
+
+.top-row {
+  position: relative; }
 
 .navbar {
   float: left;
@@ -150,33 +157,18 @@ li {
   .sidebar:last-child {
     margin-right: 0; }
 
-.harpoon {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%;
-  height: auto; }
-  .harpoon:last-child {
-    margin-right: 0; }
-
 .comment {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  height: 17vh;
+  height: 100%;
   position: relative; }
   .comment:last-child {
     margin-right: 0; }
 
-ul {
-  padding: 0 5px 0; }
-
-li {
-  margin-top: 25px; }
-
-.top-row {
-  position: relative; }
+.sidebar {
+  border: 2px solid black; }
 
 .post {
   position: relative;
@@ -187,42 +179,74 @@ li {
     font-family: Bad Script;
     font-size: 20px;
     font-weight: bold;
-    color: black; }
+    color: black;
+    position: absolute;
+    top: 80px;
+    left: 110px; }
   .post .animated-text {
     font-family: Bad Script;
     font-size: 30px;
     font-weight: bold;
     color: black;
-    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50px;
-    left: 70px;
+    top: 40px;
+    left: 100px;
     height: 230px;
-    padding-bottom: 60px; }
-    .post .animated-text:hover {
-      opacity: 1; }
+    padding-bottom: 20px; }
+    @media only screen and (min-width: 790px) {
+      .post .animated-text {
+        left: 120px; } }
+    @media only screen and (min-width: 865px) {
+      .post .animated-text {
+        font-size: 35px;
+        top: 55px; } }
+    @media only screen and (min-width: 965px) {
+      .post .animated-text {
+        left: 130px;
+        top: 60px; } }
 @keyframes type-1 {
   from {
     width: 0; } }
 @keyframes blink {
   to {
     opacity: .0; } }
-      .post .animated-text:hover p {
-        white-space: nowrap;
-        width: 400px;
-        overflow: hidden;
-        padding-top: 5px; }
-      .post .animated-text:hover .text-1 {
-        animation: type-1 4s steps(60, end); }
-
-.sidebar {
-  border: 2px solid black; }
+    .post .animated-text p {
+      white-space: nowrap;
+      width: 400px;
+      overflow: hidden;
+      padding: 10px 0 10px; }
+    .post .animated-text .text {
+      animation: type-1 4s steps(60, end); }
+  @media only screen and (max-width: 875px) {
+    .post {
+      margin-bottom: -60px; } }
 
 em {
   font-style: italic; }
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+  margin-left: 3em;
+  width: 50%; }
+  @media only screen and (max-width: 920px) {
+    .comment {
+      margin-bottom: 2em; } }
+
+.comment-figure {
+  margin-right: 1em; }
+
+.comment-body,
+.comment-body :last-child {
+  margin-bottom: 0; }
+
+.comment-title {
+  margin-bottom: .5em;
+  margin-right: 2em; }
 
 #wrapper {
   max-width: 1200px;

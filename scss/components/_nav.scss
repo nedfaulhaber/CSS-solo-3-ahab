@@ -35,9 +35,14 @@ a {
   color: white;
 }
 
+ul {
+  padding: 0 5px 0;
+}
+
 li {
   display: inline;
   text-align: center;
+  margin-top: 25px;
   @include text(Playfair Display, 16px, normal, white);
   @media only screen and (min-width: 1200px) {
     font-size: 19px;

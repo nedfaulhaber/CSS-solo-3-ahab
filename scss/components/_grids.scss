@@ -2,6 +2,10 @@
   @include span-columns(12);
 }
 
+.top-row {
+  position: relative;
+}
+
 .navbar {
   @include span-columns(12);
   height: 6vh;
@@ -19,8 +23,8 @@ li {
   @include span-columns(8);
   height: 30vh;
   position: relative;
-
 }
+
 
 .sidebar {
   @include span-columns(4);
@@ -30,13 +34,8 @@ li {
   position: absolute;
 }
 
-.harpoon {
-  @include span-columns(2);
-  height: auto;
-}
 .comment {
   @include span-columns(4);
-  height: 17vh;
+  height: 100%;
   position: relative;
-
 }

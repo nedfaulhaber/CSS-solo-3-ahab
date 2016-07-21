@@ -2,7 +2,9 @@
 @import "libraries/bourbon/bourbon";
 @import "libraries/neat/neat";
 @import "components/nav";
-@import "helpers/variables";
 @import "components/grids";
-@import "components/main-divs";
+@import "components/sidebar";
+@import "components/posts";
+@import "components/comments";
+@import "helpers/variables";
 @import "helpers/mixins";
