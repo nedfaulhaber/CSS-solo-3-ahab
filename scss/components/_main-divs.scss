@@ -19,7 +19,53 @@ li {
   background-image: url("../img/burntpaper.png");
   background-repeat: no-repeat;
   background-size: contain;
+  h4 {
+    @include text(Bad Script, 20px, bold, black);
+  }
+.animated-text {
+  @include text(Bad Script, 30px, bold, black);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  height: 230px;
+  padding-bottom: 60px;
 
+  &:hover {
+    opacity: 1;
+
+    @keyframes type-1 {
+      from {width: 0;}
+    }
+
+    @keyframes blink {
+      to{opacity: .0;}
+    }
+
+    p {
+      white-space: nowrap;
+      width: 400px;
+      overflow: hidden;
+      padding-top: 5px;
+    }
+    .text-1 {
+      animation: type-1 4s steps(60, end);
+    }
+
+      // span{
+      //   animation: blink 1s linear 20s infinite;
+      // }
+      // @include text(Bad Script, 16px, normal, black);
+      // opacity: 0;
+      // &:hover {
+      //   transition: opacity .15s ease-in-out;
+      //   opacity: 1;
+      // }
+    }
+  }
 }
 
 .sidebar {
