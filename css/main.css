@@ -51,9 +51,11 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-#blog-title {
-  height: 6vh;
+#blog-title, .top-row, .second-row, .post, .comment {
   position: relative; }
+
+#blog-title {
+  height: 6vh; }
   #blog-title h2 {
     font-family: Bad Script;
     font-size: 35px;
@@ -74,7 +76,7 @@ html {
         margin-top: 1.5%; } }
 
 .navbar {
-  background: #214e44; }
+  background: #4c5b58; }
 
 #blog-title {
   background: #213231; }
@@ -98,6 +100,9 @@ li {
     li {
       font-size: 19px; } }
 
+#blog-title, .top-row, .second-row, .post, .comment {
+  position: relative; }
+
 .top-row, .second-row, .third-row, .fourth-row {
   float: left;
   display: block;
@@ -105,9 +110,6 @@ li {
   width: 100%; }
   .top-row:last-child, .second-row:last-child, .third-row:last-child, .fourth-row:last-child {
     margin-right: 0; }
-
-.top-row {
-  position: relative; }
 
 .navbar {
   float: left;
@@ -140,8 +142,7 @@ li {
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
-  height: 30vh;
-  position: relative; }
+  height: 30vh; }
   .post:last-child {
     margin-right: 0; }
 
@@ -149,11 +150,7 @@ li {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  height: auto;
-  top: 0;
-  right: 0;
-  position: absolute; }
+  width: 31.76157%; }
   .sidebar:last-child {
     margin-right: 0; }
 
@@ -162,16 +159,48 @@ li {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  height: 100%;
-  position: relative; }
+  height: 100%; }
   .comment:last-child {
     margin-right: 0; }
 
 .sidebar {
-  border: 2px solid black; }
+  padding: 10px 30px 0 0;
+  font-family: Bad Script;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  line-height: 1.5em;
+  height: auto;
+  top: 0;
+  right: 0;
+  position: absolute; }
+  @media (min-width: 1140px) {
+    .sidebar {
+      font-family: Bad Script;
+      font-size: 18px;
+      font-weight: normal;
+      color: white; } }
+  @media (min-width: 1250px) {
+    .sidebar {
+      padding: 30px 40px 0 0; } }
+  @media (min-width: 1450px) {
+    .sidebar {
+      font-family: Bad Script;
+      font-size: 22px;
+      font-weight: normal;
+      color: white; } }
+  @media (min-width: 1900px) {
+    .sidebar {
+      font-family: Bad Script;
+      font-size: 24px;
+      font-weight: normal;
+      color: white;
+      padding-right: 100px; } }
+
+#blog-title, .top-row, .second-row, .post, .comment {
+  position: relative; }
 
 .post {
-  position: relative;
   background-image: url("../img/burntpaper.png");
   background-repeat: no-repeat;
   background-size: contain; }
@@ -224,15 +253,17 @@ li {
     .post {
       margin-bottom: -60px; } }
 
-em {
-  font-style: italic; }
-
 .comment {
   display: flex;
   align-items: flex-start;
   margin-bottom: 1em;
-  margin-left: 3em;
-  width: 50%; }
+  margin-left: 2em;
+  width: 50%;
+  font-family: Bad Script;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  line-height: 1.5em; }
   @media only screen and (max-width: 920px) {
     .comment {
       margin-bottom: 2em; } }
@@ -248,17 +279,44 @@ em {
   margin-bottom: .5em;
   margin-right: 2em; }
 
-#wrapper {
+.ishmael {
+  font-family: Pacifico;
+  font-size: 18px;
+  font-weight: normal;
+  color: white; }
+
+.queequeg {
+  font-family: Nothing You Could Do;
+  font-size: 18px;
+  font-weight: normal;
+  color: white; }
+
+.starbuck {
+  font-family: Marck Script;
+  font-size: 20px;
+  font-weight: normal;
+  color: white; }
+
+.fedallah {
+  font-family: Patrick Hand SC;
+  font-size: 20px;
+  font-weight: normal;
+  color: white; }
+
+#blog-title, .top-row, .second-row, .post, .comment {
+  position: relative; }
+
+body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(rgba(85, 91, 110, 0.8), rgba(85, 91, 110, 0.8)), url("../img/moby.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   height: 100vh;
   max-width: 100%;
   min-width: 768px; }
-  #wrapper::after {
+  body::after {
     clear: both;
     content: "";
     display: block; }

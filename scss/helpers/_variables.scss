@@ -4,4 +4,6 @@ $background-overlay: transparentize(#F7F4EA, .2);
 
 $title-blue: darken(#89B0AE, 45%);
 
-$nav-blue: darken(#BEE3DB, 60%)
+$nav-blue: shade(#BEE3DB, 60%);
+
+$body-text: lighten(#A6A2A2, 40%);

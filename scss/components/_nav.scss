@@ -1,9 +1,10 @@
 @import "helpers/mixins";
 @import "helpers/variables";
+@import "helpers/extends";
 
 #blog-title {
   height: 6vh;
-  position: relative;
+  @extend %relative;
   h2 {
     @include text(Bad Script, 35px, bold, white);
     margin-top: 1%;

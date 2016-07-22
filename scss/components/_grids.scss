@@ -1,10 +1,13 @@
+@import "helpers/extends";
+
 .top-row, .second-row, .third-row, .fourth-row {
   @include span-columns(12);
 }
 
-.top-row {
-  position: relative;
+.top-row, .second-row {
+  @extend %relative
 }
+
 
 .navbar {
   @include span-columns(12);
@@ -22,20 +25,16 @@ li {
 .post {
   @include span-columns(8);
   height: 30vh;
-  position: relative;
+  @extend %relative
 }
 
 
 .sidebar {
   @include span-columns(4);
-  height: auto;
-  top: 0;
-  right: 0;
-  position: absolute;
 }
 
 .comment {
   @include span-columns(4);
   height: 100%;
-  position: relative;
+  @extend %relative
 }

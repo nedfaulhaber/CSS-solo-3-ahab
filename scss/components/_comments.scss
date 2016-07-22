@@ -1,28 +1,25 @@
 @import "helpers/mixins";
 @import "helpers/variables";
 
-em {
-    font-style: italic;
-}
 
 .comment {
-  // position: relative;
   display: flex;
   align-items: flex-start;
   margin-bottom: 1em;
-  margin-left: 3em;
+  margin-left: 2em;
   width: 50%;
+  @include text(Bad Script, 18px, normal, $body-text);
+  line-height: 1.5em;
   @media only screen and (max-width: 920px) {
     margin-bottom: 2em;
   }
 
-  }
+}
 
 
 .comment-figure {
   margin-right: 1em;
 }
-
 
 
 .comment-body,
@@ -34,4 +31,20 @@ em {
 .comment-title {
   margin-bottom: .5em;
   margin-right: 2em;
+}
+
+.ishmael {
+  @include text(Pacifico, 18px, normal, $body-text);
+}
+
+.queequeg {
+  @include text(Nothing You Could Do, 18px, normal, $body-text);
+}
+
+.starbuck {
+  @include text(Marck Script, 20px, normal, $body-text);
+}
+
+.fedallah {
+  @include text(Patrick Hand SC, 20px, normal, $body-text);
 }

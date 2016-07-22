@@ -3,5 +3,29 @@
 
 
 .sidebar {
-  border: 2px solid black;
+  padding: 10px 30px 0 0;
+  @include text(Bad Script, 16px, normal, $body-text);
+  line-height: 1.5em;
+  height: auto;
+  top: 0;
+  right: 0;
+  position: absolute;
+
+  @media (min-width: 1140px) {
+    @include text(Bad Script, 18px, normal, $body-text);
+  }
+
+  @media (min-width: 1250px) {
+    padding: 30px 40px 0 0;
+  }
+
+  @media (min-width: 1450px) {
+    @include text(Bad Script, 22px, normal, $body-text);
+  }
+
+  @media (min-width: 1900px) {
+    @include text(Bad Script, 24px, normal, $body-text);
+    padding-right: 100px;
+  }
+
 }

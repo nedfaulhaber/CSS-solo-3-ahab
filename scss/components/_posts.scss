@@ -1,9 +1,10 @@
 @import "helpers/mixins";
 @import "helpers/variables";
+@import "helpers/extends";
 
 
 .post {
-  position: relative;
+  @extend %relative;
   background-image: url("../img/burntpaper.png");
   background-repeat: no-repeat;
   background-size: contain;
